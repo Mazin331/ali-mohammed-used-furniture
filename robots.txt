@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mazin331.github.io/ali-mohammed-used-furniture/sitemap.xml
