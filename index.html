@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أبو محمد لشراء الأثاث المستعمل بجدة | اتصل نصل</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #1a4d6e;
+            --gold-accent: #d4af37;
+            --white: #ffffff;
+            --light-gray: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(rgba(26, 77, 110, 0.85), rgba(26, 77, 110, 0.85)), 
+                        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200');
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding: 0 20px;
+            border-bottom: 8px solid var(--gold-accent);
+        }
+
+        .location-badge {
+            background: var(--gold-accent);
+            color: #000;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        header h1 { font-size: clamp(2.5rem, 8vw, 4rem); margin: 0; font-weight: 900; }
+        header p { font-size: clamp(1.2rem, 4vw, 1.8rem); margin: 15px 0; }
+
+        .cta-container {
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 15px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .btn-call { background: var(--gold-accent); color: #000; }
+        .btn-call:hover { background: #b8962d; transform: scale(1.05); }
+
+        /* Services Grid */
+        .jeddah-services {
+            padding: 80px 10%;
+            background: var(--white);
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background: var(--gold-accent);
+            position: absolute;
+            bottom: -10px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            padding: 40px 20px;
+            border: 1px solid #eee;
+            border-radius: 15px;
+            transition: 0.4s;
+            background: var(--light-gray);
+        }
+
+        .card:hover { 
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1); 
+            border-color: var(--gold-accent);
+        }
+
+        .card h3 { color: var(--primary-blue); font-size: 1.5rem; }
+
+        /* Why Jeddah Info */
+        .info-strip {
+            background: var(--primary-blue);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .phone-big {
+            font-size: clamp(2rem, 10vw, 3.5rem);
+            color: var(--gold-accent);
+            text-decoration: none;
+            display: block;
+            margin: 20px 0;
+            font-weight: 900;
+        }
+
+        /* Floating WhatsApp */
+        .whatsapp {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: #25d366;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            z-index: 1000;
+            text-decoration: none;
+            font-size: 35px;
+        }
+
+        @media (max-width: 768px) {
+            .cta-container { flex-direction: column; width: 100%; }
+            .btn { width: 80%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="location-badge">📍 نغطي جميع أحياء جدة</div>
+        <h1>أبو محمد لشراء المستعمل</h1>
+        <p>نشتري الأثاث والأجهزة بأعلى الأسعار في "جدة" فقط</p>
+        <div class="cta-container">
+            <a href="tel:0550849424" class="btn btn-call">📞 اتصل الآن: 0550849424</a>
+        </div>
+    </header>
+
+    <section class="jeddah-services">
+        <h2 class="section-title">خدماتنا في جدة</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>🛋️ عفش منزلي</h3>
+                <p>شراء الكنب، غرف النوم، المطابخ، والسجاد بأسعار مرضية جداً.</p>
+            </div>
+            <div class="card">
+                <h3>❄️ مكيفات وأجهزة</h3>
+                <p>نشتري مكيفات الشباك والسبليت، الثلاجات، والأفران بجميع حالاتها.</p>
+            </div>
+            <div class="card">
+                <h3>🚛 فك ونقل فوري</h3>
+                <p>نصلك في أي حي بجدة (الصفا، المروة، الحمدانية، الروضة..) والفك علينا!</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="info-strip">
+        <h2>اتصل نصلك فوراً في أي مكان داخل جدة</h2>
+        <p>متاحون طوال الأسبوع لخدمتكم</p>
+        <a href="tel:0550849424" class="phone-big">0550849424</a>
+        <p>أبو محمد - متخصصون في تقدير قيمة الأثاث المستعمل</p>
+    </div>
+
+    <a href="https://wa.me/966550849424?text=السلام%20عليكم%20أبو%20محمد،%20عندي%20أثاث%20مستعمل%20في%20جدة" class="whatsapp" target="_blank">
+        <span style="color: white;">💬</span>
+    </a>
+
+</body>
+</html>
